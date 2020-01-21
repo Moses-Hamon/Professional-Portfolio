@@ -8,6 +8,9 @@ import {
   TopAppBarFixedAdjust
 } from "@rmwc/top-app-bar";
 
+import "@material/top-app-bar/dist/mdc.top-app-bar.css";
+import "@material/typography/dist/mdc.typography.css";
+import "./TopBar.css"
 
 const navItems = [
   { name: "About Me", link: "" },
@@ -32,7 +35,7 @@ const TopBar = () => {
                 const { name } = item;
                 return (
                   <Typography
-                    className="top-bar__menu-item"
+                    className="TopBar__menu-item"
                     key={index}
                     use="body1"
                   >
