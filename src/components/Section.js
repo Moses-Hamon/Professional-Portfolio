@@ -1,19 +1,17 @@
 import React, { Component } from "react";
 import { Typography } from "@rmwc/typography";
 
-class Section extends Component {
-  render() {
+const Section = ({children, heading}) => {
     return (
       <div className="Section">
         <div className="container">
           <Typography className="section__heading" use="headline3">
-            {this.props.heading}
+            {heading}
           </Typography>
-          {this.props.children}
+          {children}
         </div>
       </div>
     );
-  }
 }
 
 export default Section;
