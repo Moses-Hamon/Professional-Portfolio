@@ -1,4 +1,11 @@
 .AboutMe {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+}
+
+.AboutMeBlurb__table, tr, td {
+padding: 10px;
+text-align: left;
+vertical-align: top;
 }

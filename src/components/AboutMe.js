@@ -11,7 +11,7 @@ const aboutMeData = {
   blurb: {
     Background:
       "I recently decided to transition to a career in Software Development, I have completed a Diploma Of Software Development. I've enjoyed developing my skills in the Web Development space, gaining professional experience within the startup arena and making friends with other like-minded developers.",
-    Hobbies: "Developing, mountain biking, online gaming, fishing, camping.",
+    Hobbies: "Developing, adventures with my family, mountain biking, online gaming, fishing, camping.",
     Goals:
       "Work hard and expand on my software knowledge and skills as quickly as possible."
   }
@@ -20,7 +20,7 @@ const aboutMeData = {
 const AboutMeBlurb = props => {
   const { blurb } = props;
   return (
-    <table>
+    <table className="AboutMeBlurb__table">
       {Object.keys(blurb).map(item => {
         return (
           <tr key={item}>
@@ -39,7 +39,7 @@ class AboutMe extends Component {
     return (
       <div className="AboutMe">
         <Section heading="About Me">
-          <Avatar img={img}>
+          <Avatar img={img} url={url}>
             <AboutMeBlurb blurb={blurb} />
           </Avatar>
         </Section>
