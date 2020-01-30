@@ -8,3 +8,7 @@
     height: 200px;
     border-radius: 50%;
 }
+
+.Avatar__img:hover {
+    cursor: pointer;
+}
