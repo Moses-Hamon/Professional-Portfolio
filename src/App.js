@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App flex-col">
+    <div className="flex-col App">
     <TopBar />
     <AboutMe />
     <ProjectGallery />
